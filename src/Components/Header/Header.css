@@ -1,0 +1,22 @@
+.brand>h2{
+    background-image: linear-gradient(90deg,#6c5ce7,#d63031);
+    -webkit-background-clip: text;
+    color: transparent;
+
+    
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #34495e;
+}
+.navbar a{
+    color: #00b894;
+    padding: 8px;
+    font-size: 1.6rem;
+}
+.navbar a:hover{
+    color: #c0392b;
+    text-shadow: 2px 0px 4px  #ecf0f1;
+}
