@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className='header'>
             <div className='brand'>
-                <h2>Knowledge Cafe</h2>
+                <a href=""><h2 className='brandName'>Knowledge Cafe</h2></a>
             </div>
             <div className='navbar'>
                 <nav>
