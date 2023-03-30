@@ -3,6 +3,7 @@
     {
         "id":"uuid1",
         "AuthorName":"Hasan",
+        "AuthorImage":"./Images/1.jpg",
         "Date":"March 30 (1 days ago)",
         "title":"How To Learn HTML 5",
         "ReadTime":"5 min read",
@@ -12,6 +13,7 @@
     {
         "id":"bbid2",
         "AuthorName":"Banna",
+        "AuthorImage":"./Images/2.jpg",
         "Date":"March 29 (2 days ago)",
         "title":"How To Learn HTML 6",
         "ReadTime":"10 min read",
@@ -21,6 +23,7 @@
     {
         "id":"ccid3",
         "AuthorName":"Nahid",
+        "AuthorImage":"./Images/3.jpg",
         "Date":"March 30 (1 days ago)",
         "title":"How To Learn Javascript",
         "ReadTime":"25 min read",
@@ -30,6 +33,7 @@
     {
         "id":"ffid4",
         "AuthorName":"Babu",
+        "AuthorImage":"./Images/4.jpg",
         "Date":"March 30 (1 days ago)",
         "title":"How To Learn React JS",
         "ReadTime":"35 min read",

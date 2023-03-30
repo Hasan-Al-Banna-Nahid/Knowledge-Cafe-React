@@ -1,0 +1,11 @@
+.load-blogs{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 8fr 4fr;
+}
+.blog-items{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 8px;
+}
