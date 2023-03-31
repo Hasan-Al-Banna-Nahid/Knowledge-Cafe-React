@@ -1,6 +1,7 @@
 .card{
     border: 1.5px solid #182C61;
-    margin: 20px 0;
+    margin: 20px 20px;
+    padding: 5px;
     border-radius: 8px;
 }
 #title-image{
@@ -33,6 +34,9 @@
 }
 #hashtag{
     color: #2C3A47;
+}
+#title{
+    font-size: 2rem;
 }
 #read-time{
     margin-top: 4rem;

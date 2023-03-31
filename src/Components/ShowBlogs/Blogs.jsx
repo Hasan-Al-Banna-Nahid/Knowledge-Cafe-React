@@ -3,7 +3,10 @@ import './Blogs.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 const Blogs = (props) => {
-    const { image, AuthorName, AuthorImage, Date, title, ReadTime, hashtags, } = props.blogs;
+    const { image, AuthorName, AuthorImage, Date, title, ReadTime, hashtags } = props.blogs;
+    const handleBookmarks = props.handleBookmarks;
+    let randomTime = Math.floor(Math.random()*20 + 5) 
+    
     return (
         <div>
             <div className='card'>
@@ -17,11 +20,11 @@ const Blogs = (props) => {
                                 <p id='date'>{Date}</p>
                             </div>
                         </div>
-                        <p id='read-time'>{ReadTime} <FontAwesomeIcon icon={faBookmark} /></p>
+                        <p id='read-time'> <span id='time'>{randomTime}</span>{ReadTime} <FontAwesomeIcon onClick={()=>handleBookmarks(props.blogs)} icon={faBookmark} /></p>
                     </div>
-                    <h3 id='title'>{title}</h3>
+                    <a id='title'>{title}</a>
                     <p id='hashtag'>{hashtags}</p>
-                    <a href="">Mark As Read</a>
+                    <button onClick={()=>handleBookmarks(props.blogs)}>Mark As Read</button>
                 </div>
             </div>
         </div>

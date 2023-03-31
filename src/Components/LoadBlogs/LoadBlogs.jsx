@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Bookmarks from '../Bookmarks/Bookmarks';
 import Blogs from '../ShowBlogs/Blogs';
 import './LoadBlogs.css'
 
@@ -9,6 +10,11 @@ const LoadBlogs = () => {
             .then(res => res.json())
             .then(data => setBlogs(data))
     }, [])
+    const [bookmarks,setBookmarks] = useState([]);
+    const handleBookmarks = id =>{
+        const newBookmarks = [...bookmarks,blogs];
+        setBookmarks(newBookmarks)
+    }
     return (
         <div className='load-blogs'>
             <div>
@@ -16,15 +22,16 @@ const LoadBlogs = () => {
                 {
                     blogs.map(blog => 
                     <Blogs 
-                        key={blog.id} 
-                        blogs={blog} 
+                        key = {blog.id} 
+                        blogs = {blog}
+                        handleBookmarks = {handleBookmarks} 
                     />
                     )
                 }
                 </div>
             </div>
             <div>
-
+                <Bookmarks bookmarks = {bookmarks} />
             </div>
         </div>
     );
