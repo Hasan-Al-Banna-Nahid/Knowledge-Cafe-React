@@ -11,9 +11,10 @@ const LoadBlogs = () => {
             .then(data => setBlogs(data))
     }, [])
     const [bookmarks,setBookmarks] = useState([]);
-    const handleBookmarks = id =>{
-        const newBookmarks = [...bookmarks,blogs];
+    const handleBookmarks = bookmark =>{
+        const newBookmarks = [...bookmarks,bookmark];
         setBookmarks(newBookmarks)
+        console.log(bookmark);
     }
     return (
         <div className='load-blogs'>
@@ -31,7 +32,7 @@ const LoadBlogs = () => {
                 </div>
             </div>
             <div>
-                <Bookmarks bookmarks = {bookmarks} />
+                <Bookmarks bookmarks = {bookmarks}/>
             </div>
         </div>
     );

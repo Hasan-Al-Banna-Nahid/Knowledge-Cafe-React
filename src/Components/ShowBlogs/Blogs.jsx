@@ -20,11 +20,11 @@ const Blogs = (props) => {
                                 <p id='date'>{Date}</p>
                             </div>
                         </div>
-                        <p id='read-time'> <span id='time'>{randomTime}</span>{ReadTime} <FontAwesomeIcon onClick={()=>handleBookmarks(props.blogs)} icon={faBookmark} /></p>
+                        <p id='read-time'> <span id='time'>{randomTime}</span>{ReadTime} <FontAwesomeIcon onClick={()=>handleBookmarks(props.blogs)}  icon={faBookmark} /></p>
                     </div>
                     <a id='title'>{title}</a>
                     <p id='hashtag'>{hashtags}</p>
-                    <button onClick={()=>handleBookmarks(props.blogs)}>Mark As Read</button>
+                    <button >Mark As Read</button>
                 </div>
             </div>
         </div>

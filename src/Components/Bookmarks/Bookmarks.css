@@ -6,7 +6,7 @@
     font-weight: 700;
     font-size: 2rem;
 }
-.bookmarksItem{
+.bookmarksItem,.BookmarksItemTitle{
     color: #182C61;
     font-size: 2rem;
     font-weight: 800;

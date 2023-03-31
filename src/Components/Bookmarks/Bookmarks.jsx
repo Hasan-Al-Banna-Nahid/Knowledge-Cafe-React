@@ -1,7 +1,9 @@
 import React from 'react';
 import './Bookmarks.css'
 const Bookmarks = (props) => {
-    const {ReadTime} = props.bookmarks;
+    console.log(props);
+    // const {ReadTime,title} = props.bookmarks;
+  
     return (
         <div className='bookmarks'>
             <div>
@@ -9,6 +11,7 @@ const Bookmarks = (props) => {
             </div>
             <div>
                 <h3 className='bookmarksItem'>Bookmarks Added : {props.bookmarks.length}</h3>
+                <h3 className='BookmarksItemTitle'></h3>
             </div>
         </div>
     );
