@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Bookmarks from '../Bookmarks/Bookmarks';
 import Blogs from '../ShowBlogs/Blogs';
-import ShowTime from '../ShowTime/ShowTime';
 import './LoadBlogs.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
@@ -37,7 +36,6 @@ const LoadBlogs = () => {
         localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
     }, [bookmarks]);
 
-
     return (
         <div className='load-blogs'>
             <div>
@@ -54,7 +52,6 @@ const LoadBlogs = () => {
                 </div>
             </div>
             <div>
-                <ShowTime bookmarks={blogs} />
                 <Bookmarks bookmarks={bookmarks} handleBookmarks={handleBookmarks} />
             </div>
         </div>

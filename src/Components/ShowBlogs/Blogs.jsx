@@ -7,7 +7,6 @@ import 'react-toastify/dist/ReactToastify.css'
 const Blogs = (props) => {
     const {id, image, AuthorName, AuthorImage, Date, title, ReadTime, hashtags } = props.blogs;
     const handleBookmarks = props.handleBookmarks;
-    const handleTime = props.handleTime;
     
     
     return (
