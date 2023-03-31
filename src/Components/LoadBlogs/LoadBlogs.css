@@ -1,17 +1,30 @@
-.load-blogs{
+.load-blogs {
     display: grid;
     align-items: center;
     justify-content: center;
     grid-template-columns: 8fr 4fr;
 }
-.blog-items{
+
+.blog-items {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 8px;
 }
+
+.Bookmark {
+    background-color: rgba(96, 71, 236, 0.1);
+    border: 1px solid #6047EC;
+    border-radius: 8px;
+
+}
+
 @media screen and (max-width:576px) {
-    .blog-items{
+    .blog-items {
         grid-template-columns: min-content;
-        
+    }
+
+    .load-blogs {
+        grid-template-columns: min-content;
+
     }
 }

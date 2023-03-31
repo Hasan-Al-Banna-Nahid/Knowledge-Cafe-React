@@ -12,8 +12,8 @@
     font-weight: 800;
 }
 .bookmarks{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: rgba(96, 71, 236, 0.1);
+    border: 1px solid #6047EC;
+    border-radius: 8px;
+    padding: 10px;
 }

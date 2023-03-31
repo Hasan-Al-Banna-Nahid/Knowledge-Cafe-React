@@ -2,10 +2,13 @@ import React from 'react';
 import './Blogs.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
 const Blogs = (props) => {
-    const { image, AuthorName, AuthorImage, Date, title, ReadTime, hashtags } = props.blogs;
+    const {id, image, AuthorName, AuthorImage, Date, title, ReadTime, hashtags } = props.blogs;
     const handleBookmarks = props.handleBookmarks;
-    let randomTime = Math.floor(Math.random()*20 + 5) 
+    const handleTime = props.handleTime;
+    
     
     return (
         <div>
@@ -20,11 +23,12 @@ const Blogs = (props) => {
                                 <p id='date'>{Date}</p>
                             </div>
                         </div>
-                        <p id='read-time'> <span id='time'>{randomTime}</span>{ReadTime} <FontAwesomeIcon onClick={()=>handleBookmarks(props.blogs)}  icon={faBookmark} /></p>
+                        <p id='read-time'> 10 {ReadTime} <FontAwesomeIcon onClick={()=>handleBookmarks(props.blogs)}  icon={faBookmark} /></p>
                     </div>
                     <a id='title'>{title}</a>
                     <p id='hashtag'>{hashtags}</p>
-                    <button >Mark As Read</button>
+                    <button>Mark As Read</button>
+                    <ToastContainer />
                 </div>
             </div>
         </div>
