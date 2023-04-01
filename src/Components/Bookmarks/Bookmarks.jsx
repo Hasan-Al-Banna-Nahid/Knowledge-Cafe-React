@@ -8,7 +8,7 @@ const Bookmarks = (props) => {
     // const {ReadTime,title} = props.bookmarks;
   
     return (
-        <div className='bookmarks'>
+        <div>
             <div>
                 <h3 className='bookmarksItem'>Bookmarks Added : {props.bookmarks.length}</h3>
                 <ToastContainer />
